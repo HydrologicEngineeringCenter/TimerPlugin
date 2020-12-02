@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-package timerplugin;
 import com.rma.io.DssFileManagerImpl;
 import com.rma.io.RmaFile;
 import hec.data.Parameter;

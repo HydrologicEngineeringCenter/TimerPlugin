@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package timerplugin;
+
 import com.rma.factories.NewObjectFactory;
 import hec.model.OutputVariable;
 import hec2.map.GraphicElement;

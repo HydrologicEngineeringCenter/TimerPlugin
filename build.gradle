@@ -1,0 +1,20 @@
+plugins {
+    id 'java'
+}
+
+repositories {
+    flatDir{
+        dirs ("lib")
+    }
+}
+
+dependencies {
+    implementation name: 'hec'
+    implementation name: 'hecnf'
+    implementation name: 'hecnfPlugin'
+    implementation name: 'jdom-1.0'
+    implementation name: 'rma'
+    implementation name: 'rmadev'
+    implementation name: 'wat'
+    implementation name: 'watModel'
+}

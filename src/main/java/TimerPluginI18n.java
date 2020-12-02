@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 
-package timerplugin;
 import com.rma.util.I18n;
 import java.util.ResourceBundle;
 /**
