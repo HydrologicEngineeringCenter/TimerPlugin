@@ -30,6 +30,7 @@ import org.jdom.Element;
 public class TimerAlternative extends SelfContainedPluginAlt{
     private List<DataLocation> _dataLocations = new ArrayList<>();
     private String _pluginVersion;
+    private static long _previousMilliSec = 0;
     private static final String DocumentRoot = "TimerAlternative";
     private static final String OutputVariableElement = "OutputVariables";
     private static final String AlternativeNameAttribute = "Name";
@@ -137,7 +138,10 @@ public class TimerAlternative extends SelfContainedPluginAlt{
         for(OutputVariable o : list){
             OutputVariableImpl oimpl = (OutputVariableImpl)o;
             java.util.Date d= new java.util.Date();
-            oimpl.setValue((double) d.getTime());
+            long t = d.getTime();
+            long diff = t - _previousMilliSec;
+            _previousMilliSec = t;
+            oimpl.setValue((double) diff);
         }
         return true;
     }

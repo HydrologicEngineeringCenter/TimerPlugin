@@ -18,3 +18,9 @@ dependencies {
     implementation name: 'wat'
     implementation name: 'watModel'
 }
+
+jar {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+ //   destinationDirectory = file("$projectDir/build/libs/unobfuscated")
+}
