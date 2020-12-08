@@ -22,5 +22,9 @@ dependencies {
 jar {
     sourceCompatibility = JavaVersion.VERSION_1_8
     targetCompatibility = JavaVersion.VERSION_1_8
- //   destinationDirectory = file("$projectDir/build/libs/unobfuscated")
+    manifest {
+        attributes 'X-COMMENT': 'Main-Class will be added automatically by build'
+        attributes 'WatPluginMainClass': 'TimerPlugin'
+        //   destinationDirectory = file("$projectDir/build/libs/unobfuscated")
+    }
 }
